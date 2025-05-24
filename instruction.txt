@@ -1,0 +1,60 @@
+Client  Server  Architecture
+
+
+IP Address
+127.0.0.1
+DNS - Domain  Name  System
+
+Domain  ->   IP Address
+
+
+flipkart IP Address
+
+163.53.76.86
+
+www.flipkart.com  -> 163.53.76.86
+
+
+
+What is the role of DNS System ?
+Is to resolve the domain name into IP Address.
+
+............................................................................
+
+
+Base URL
+protocol+subdomain+domain+TLD
+
+https://www.flipkart.com/audio-video/headphones/pr?sid=0pm%2Cfcn
+
+
+What is the base url ?
+https://www.flipkart.com = base url
+
+
+
+How can we generate this Query String in HTML ?
+Why we need Query String ?
+
+?name=value&name=value&name=value
+
+Client Server Architecture
+
+ClientTool  (Google Chrome) >>>>>>> www.flipkart.com >>>>>  163.53.76.86 (DNS server) >>>> IP Address >>>>>  Request >>>> Flipkart Server
+
+
+
+Why we need Query String ?
+To Send Some information to server we use Query String .
+
+
+How can we generate this Query String in HTML ?
+HTML FORMS
+
+let  assume we want to create a signup form
+1. First Name
+2. Last Name
+3. Age
+
+Client>-------------------------------------------------Query String--------------------------------------------------------->Server
+HTML Form
