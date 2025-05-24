@@ -23,7 +23,7 @@ pipeline {
                     def imageTag = "v${env.BUILD_NUMBER}"
                     withCredentials([usernamePassword(credentialsId: 'docker-hub-repo', passwordVariable: 'PASS', usernameVariable: 'USER')]) {
                         sh "docker build -t ${DOCKER_IMAGE}:${imageTag} ."
-                        sh "echo $PASS | docker login -u $USER --passwordstdin"
+                        sh "echo $PASS | docker login -u $USER --password-stdin"
                     }
                 }
             }
